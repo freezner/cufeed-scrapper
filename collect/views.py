@@ -1,15 +1,17 @@
 import feedparser
 import ssl
 from django.http import JsonResponse
-
+from urllib import parse
 
 # 뉴스 수집
-def collect_news(request, site):
+def collect_news(request, site, keyword):
     try:
         if site == 'google':
-            url = 'https://news.google.com/rss/search?q=%EC%BD%94%EB%B9%97+when:1d&hl=ko&gl=KR&ceid=KR:ko'
+            url = 'https://news.google.com/rss/search?q=' + keyword + '+when:1d&hl=ko&gl=KR&ceid=KR:ko'
         else:
             raise ValueError
+
+        print('url:', url)
 
         ssl._create_default_https_context = ssl._create_unverified_context
         rss = feedparser.parse(url)
