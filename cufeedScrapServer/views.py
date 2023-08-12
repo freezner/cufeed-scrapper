@@ -3,7 +3,7 @@ import hashlib
 import feedparser
 import ssl
 from django.http import JsonResponse
-from cufeedScrapper.models import Feeds
+from cufeedScrapServer.models import Feeds
 
 
 # 뉴스 수집
