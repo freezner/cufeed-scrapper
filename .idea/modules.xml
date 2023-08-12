@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/cufeedScraper.iml" filepath="$PROJECT_DIR$/.idea/cufeedScraper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/cufeed-scrap-server.iml" filepath="$PROJECT_DIR$/.idea/cufeed-scrap-server.iml" />
     </modules>
   </component>
 </project>
