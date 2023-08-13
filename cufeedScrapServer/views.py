@@ -6,6 +6,11 @@ from django.http import JsonResponse
 from cufeedScrapServer.models import Feeds
 
 
+# 헬스 체크
+def health_check(request):
+    return JsonResponse(status=200, data={'status': 'true', 'message': 'OK'})
+
+
 # 뉴스 수집
 def collect_news(request, site, keyword):
     hash_salt = "gudwls2smsthrmawhgdmgka!"
